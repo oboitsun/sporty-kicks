@@ -53,7 +53,9 @@ export default function Team() {
   };
   return (
     <div id="team">
-      <div className="my-container">
+      <div className="my-container relative">
+        <img className="cross" src="/imgs/cross-outline.png" alt="cross" />
+
         <Heading>Team</Heading>
         <SubHeading>
           Donec gravida tellus nec elit consequat ultrices. Vivamus vel tincidunt mauris.

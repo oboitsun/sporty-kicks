@@ -1,12 +1,15 @@
 import React from "react";
 import Heading from "./Heading";
-import Star from "./Star";
+import "../styles/about-us.scss";
 import SubHeading from "./SubHeading";
 
 export default function AboutUs() {
   return (
     <div id="about-us">
       <div className="my-container lg:pb-20 relative">
+        <img className="cross" src="/imgs/cross.png" alt="cross" />
+        <img className="nineball" src="/imgs/nineball.png" alt="cross" />
+        <img className="puck" src="/imgs/puck.png" alt="cross" />
         <Heading>
           <span className="text-white">About</span>{" "}
           <span className="text-gradient">Sporty kicks</span>

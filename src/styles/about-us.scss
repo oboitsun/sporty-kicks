@@ -1,0 +1,28 @@
+@import "./variables.scss";
+#about-us {
+  .cross,
+  .puck,
+  .nineball {
+    position: absolute;
+  }
+  .cross {
+    top: 96%;
+    right: 0;
+    width: 3%;
+  }
+  .puck {
+    right: -15%;
+    top: 17%;
+    width: 17%;
+  }
+  .nineball {
+    top: 70%;
+    left: -7%;
+    width: 17%;
+  }
+  @media (min-width: 1024px) {
+  }
+
+  @media (min-width: 1280px) {
+  }
+}

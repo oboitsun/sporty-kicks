@@ -9,25 +9,27 @@ const roadmap = [
     ball: "/imgs/1.png",
   },
   {
-    month: "JUNE 2021",
+    month: "JULY 2021",
     text: "Vivamus vel tincidunt mauris. Sed sollicitudin congue nunc ac iaculis.",
-    ball: "/imgs/1.png",
+    ball: "/imgs/2.png",
   },
   {
-    month: "JUNE 2021",
+    month: "AUGUST 2021",
     text: "Vivamus vel tincidunt mauris. Sed sollicitudin congue nunc ac iaculis.",
-    ball: "/imgs/1.png",
+    ball: "/imgs/3.png",
   },
   {
-    month: "JUNE 2021",
+    month: "SEPTEMBER 2021",
     text: "Vivamus vel tincidunt mauris. Sed sollicitudin congue nunc ac iaculis.",
-    ball: "/imgs/1.png",
+    ball: "/imgs/4.png",
   },
 ];
 export default function Roadmap() {
   return (
     <div id="roadmap">
       <div className="my-container relative">
+        <img className="baseball" src="/imgs/3.png" alt="cross" />
+        <img className="bowling" src="/imgs/bowling-ball.png" alt="cross" />
         <Heading>
           <p className="font-bold">
             Road<span className="text-gradient">map</span>
@@ -59,9 +61,9 @@ export default function Roadmap() {
               <div className="gate gate-r"></div>
               <div className="gate gate-l"></div>
               {/* 1st point   */}
-              <div className="up flex flex-col items-center">
-                <img className="w-1/2" src={roadmap[0].ball} alt="ball" />
-                <p className="text-gradient font-bold uppercase text-4xl">
+              <div className="up up2 flex flex-col items-center">
+                <img className="w-1/2 bounce" src={roadmap[0].ball} alt="ball" />
+                <p className="text-gradient font-bold uppercase text-2xl lg:text-4xl text-center">
                   {roadmap[0].month}
                 </p>
                 <p className="text-white text-center w-3/4 mx-auto">{roadmap[0].text}</p>
@@ -74,8 +76,8 @@ export default function Roadmap() {
               </div>
               {/* 2nd point   */}
               <div className="up flex flex-col items-center">
-                <img className="w-1/2" src={roadmap[1].ball} alt="ball" />
-                <p className="text-gradient font-bold uppercase text-4xl">
+                <img className="w-1/2 bounce" src={roadmap[1].ball} alt="ball" />
+                <p className="text-gradient font-bold uppercase text-2xl lg:text-4xl text-center">
                   {roadmap[1].month}
                 </p>
                 <p className="text-white text-center w-3/4 mx-auto">{roadmap[1].text}</p>
@@ -86,19 +88,19 @@ export default function Roadmap() {
               </div>
               {/* 3rd point   */}
               <div className="bottom flex flex-col items-center">
-                <p className="text-gradient font-bold uppercase text-4xl">
+                <p className="text-gradient font-bold uppercase text-2xl lg:text-4xl text-center">
                   {roadmap[2].month}
                 </p>
                 <p className="text-white text-center w-3/4 mx-auto">{roadmap[2].text}</p>
-                <img className="w-1/2" src={roadmap[2].ball} alt="ball" />
+                <img className="w-1/2 bounce" src={roadmap[2].ball} alt="ball" />
               </div>
               {/* 4th point   */}
               <div className="bottom flex flex-col items-center">
-                <p className="text-gradient font-bold uppercase text-4xl">
+                <p className="text-gradient font-bold uppercase text-2xl lg:text-4xl text-center">
                   {roadmap[3].month}
                 </p>
                 <p className="text-white text-center w-3/4 mx-auto">{roadmap[3].text}</p>
-                <img className="w-1/2" src={roadmap[3].ball} alt="ball" />
+                <img className="w-1/2 bounce" src={roadmap[3].ball} alt="ball" />
               </div>
             </div>
           </div>

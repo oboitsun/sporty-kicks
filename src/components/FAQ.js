@@ -3,13 +3,12 @@ import FaqItem from "./FaqItem";
 import "../styles/faq.scss";
 import Heading from "./Heading";
 import SubHeading from "./SubHeading";
-import { motion } from "framer-motion";
 
 const faqs = [
-  { qstn: "How do I buy a Robo Kicks?", answr: "The Answer" },
-  { qstn: "What Blockhain and technology are Robo Kicks on?", answr: "The Answer" },
-  { qstn: "What can I do with once I get my Robo Kicks NFT?", answr: "The Answer" },
-  { qstn: "How many Robo Kicks can I buy?", answr: "The Answer" },
+  { qstn: "How do I buy a Sporty kicks?", answr: "The Answer" },
+  { qstn: "What Blockhain and technology are Sporty kicks on?", answr: "The Answer" },
+  { qstn: "What can I do with once I get my Sporty kicks NFT?", answr: "The Answer" },
+  { qstn: "How many Sporty kicks can I buy?", answr: "The Answer" },
 ];
 export default function FAQ() {
   return (

@@ -35,6 +35,7 @@ export default function HeroSection({
             alt="robo kicks stadium"
           />
         </div>
+        <img className="cross" src="/imgs/cross.png" alt="cross" />
         <WelcomeTo
           showPopup={showPopup}
           setShowPopup={setShowPopup}

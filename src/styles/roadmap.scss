@@ -2,6 +2,18 @@
 #roadmap {
   padding-top: 60px;
   padding-bottom: 60px;
+  .baseball {
+    position: absolute;
+    right: -12%;
+    width: 15%;
+    top: 0;
+  }
+  .bowling {
+    position: absolute;
+    left: -12%;
+    width: 18%;
+    bottom: -17%;
+  }
   .board-wrapper {
     border-radius: 40px;
     background: $gradient !important;
@@ -54,7 +66,19 @@
     display: none;
     position: absolute;
   }
-
+  .bounce {
+    transition: all 0.5s;
+    animation: bounce 0.3s ease-in-out infinite alternate;
+  }
+  .bounce:hover {
+    animation-play-state: paused;
+  }
+  .bottom:nth-of-type(2n) .bounce {
+    animation-delay: 0.2s;
+  }
+  .up2 .bounce {
+    animation-delay: 0.26s;
+  }
   @media (min-width: 1024px) {
     .gate {
       position: absolute;
@@ -152,5 +176,14 @@
   }
 
   @media (min-width: 1280px) {
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-16px) scale(1);
+  }
+  100% {
+    transform: translateY(0px) scaleY(0.95);
   }
 }

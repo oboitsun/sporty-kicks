@@ -24,7 +24,17 @@ export default function Footer({ showPopup, setShowPopup, userAddress, setUserAd
     className: "anchor text-white ",
   };
   return (
-    <div className="footer ">
+    <div className="footer relative">
+      <img
+        className="lg:hidden w-full absolute bottom-0 left-0 opacity-50 z-0"
+        src="/imgs/bottom-bg.png"
+        alt="bottom-bg"
+      />
+      <img
+        className="hidden lg:block w-full absolute -bottom-1/2 left-0 opacity-50 z-0"
+        src="/imgs/bottom-bg.png"
+        alt="bottom-bg"
+      />
       <div className="my-container ">
         <div className="w-full justify-between flex items-center">
           <div className="flex flex-col items-center mx-auto">

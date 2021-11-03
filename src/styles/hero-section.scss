@@ -65,6 +65,12 @@
     left: 50%;
     transform: translateX(-60%) translateY(-50%);
   }
+  .cross {
+    position: absolute;
+    width: 5%;
+    bottom: -25%;
+    left: 15%;
+  }
   @media (min-width: 1024px) {
     align-items: center;
     padding-top: 40px;
