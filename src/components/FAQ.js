@@ -17,20 +17,6 @@ export default function FAQ() {
       <div className="my-container">
         <div className=" flex flex-col lg:grid grid-cols-1 place-items-center max-w-4xl mx-auto">
           <div className="faq-list lg:order-1 relative z-10">
-            <div className="planet">
-              <motion.img
-                animate={{ rotate: -360 }}
-                transition={{
-                  duration: 15,
-                  repeatType: "loop",
-                  repeat: "Infinity",
-                  easeIn: "linear",
-                }}
-                className="w-full"
-                src="/imgs/planet2.png"
-                alt="planet"
-              />
-            </div>
             <Heading>
               FAQ<span className="text-gradient">'S</span>
             </Heading>
