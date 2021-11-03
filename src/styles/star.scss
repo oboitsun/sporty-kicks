@@ -1,0 +1,64 @@
+@import "./variables.scss";
+.star {
+  opacity: 0.9;
+  position: relative;
+  width: 100%;
+  padding-bottom: clamp(100%, 100px, 100%);
+  .star-core {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    transform: translateX(-50%) translateY(-50%);
+    width: 7%;
+    height: 7%;
+    border-radius: 100%;
+    background: white;
+  }
+  .star-gradient-in {
+    border-radius: 100%;
+    overflow: hidden;
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 25%;
+    height: 25%;
+    transform: translateX(-50%) translateY(-50%);
+    background: radial-gradient(
+      43.88% 43.77% at 49.13% 50.23%,
+      #8647a7 0%,
+      #743e91 8.71%,
+      #4b285e 31.19%,
+      #2b1735 52.32%,
+      #130a18 71.47%,
+      #05030638 87.99%,
+      hsla(0, 0%, 0%, 0) 100%
+    );
+  }
+  .star-gradient-out {
+    border-radius: 100%;
+    overflow: hidden;
+    z-index: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    height: 90%;
+    transform: translateX(-50%) translateY(-50%);
+    background: radial-gradient(
+      43.62% 43.62% at 49.82% 49.82%,
+      #2e00a7 0%,
+      #280091 8.71%,
+      #1a005e 31.19%,
+      #0f0035 52.32%,
+      #070018 71.47%,
+      rgba(0, 0, 0, 0.05) 100%
+    );
+  }
+  @media (min-width: 1024px) {
+  }
+
+  @media (min-width: 1280px) {
+  }
+}

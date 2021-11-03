@@ -1,0 +1,65 @@
+@import "./variables.scss";
+.app {
+  background-color: $brown;
+  min-height: 100vh;
+  color: white;
+  .btn {
+    width: 100%;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1;
+    padding: 16px 24px;
+    background: linear-gradient(180deg, #90d6eb 0%, #0f9ecd 100%);
+    border: 2px solid #0c3a8f;
+    box-sizing: border-box;
+    border-radius: 30px;
+    transition: all 0.3s linear;
+  }
+  .btn:hover {
+    background: $blue;
+    transform: scale(1.02);
+    border-color: transparent;
+    box-shadow: 0px 24px 55px -13px rgba(8, 8, 8, 0.2);
+  }
+  .btn-mint {
+    background: linear-gradient(180deg, #90d6eb 0%, #0f9ecd 100%);
+  }
+  .btn-mint:hover {
+    background: none;
+  }
+  .outlined {
+    border: 2px solid white;
+    background: transparent;
+  }
+
+  .anchor {
+    font-size: 14px;
+    text-transform: uppercase;
+    min-width: max-content;
+    @apply cursor-pointer  font-bold  transform transition-all;
+  }
+  .anchor:hover {
+    color: $blue;
+    transform: scale(1.1);
+  }
+  .socials-icon {
+    display: block;
+    color: white;
+    transition: all 0.3s ease-in-out;
+  }
+  .socials-icon:hover {
+    transform: scale(1.2);
+  }
+  .text-gradient {
+    background: $gradient;
+    background-clip: text;
+    color: transparent;
+  }
+  @media (min-width: 1024px) {
+  }
+
+  @media (min-width: 1280px) {
+  }
+}

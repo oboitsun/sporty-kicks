@@ -1,0 +1,62 @@
+@import "./variables.scss";
+#team {
+  .robo {
+    width: 95%;
+    position: relative;
+    z-index: 10;
+    transition: all 0.2s;
+  }
+  .round-bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 70%;
+    padding-bottom: 70%;
+    border-radius: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    transition: all 0.4s 0.2s;
+  }
+  .robo-container:hover .round-bg {
+    background-color: rgba(90, 209, 245, 0.486);
+    width: 90%;
+    padding-bottom: 90%;
+    box-shadow: 1px 1px 10px 4px rgba(255, 255, 255, 0.1);
+  }
+  .team-member:nth-of-type(2):hover .round-bg {
+    background-color: rgba(255, 183, 89, 0.692);
+  }
+  .team-member:nth-of-type(3):hover .round-bg {
+    background-color: rgba(255, 59, 59, 0.692);
+  }
+  .team-member:nth-of-type(4):hover .round-bg {
+    background-color: rgba(141, 255, 107, 0.932);
+  }
+  .robo-container:hover .robo {
+    transform: scale(1.1);
+  }
+  .team-name {
+    font-size: 20px;
+  }
+  .team-pos {
+    font-weight: 500;
+    font-size: 12px;
+  }
+  @media (min-width: 1024px) {
+    .team-name {
+      font-size: 24px;
+    }
+    .team-pos {
+      font-size: 14px;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .team-name {
+      font-size: 32px;
+    }
+    .team-pos {
+      font-size: 16px;
+    }
+  }
+}

@@ -1,0 +1,61 @@
+@import "./variables.scss";
+#faq {
+  .kiwi {
+    width: 75%;
+    margin: 0 auto;
+    max-width: 400px;
+    order: 1;
+    z-index: 2;
+    position: relative;
+  }
+
+  .my-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .faq-list {
+  }
+  .faq-divider {
+    background: white;
+    height: 5px;
+    @apply w-full flex-shrink-0;
+  }
+  .subheading {
+    padding-bottom: 40px;
+  }
+  .faq-question {
+    max-width: 90%;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 22px;
+    text-align: left;
+    color: white;
+  }
+  .arrow-down {
+    padding-left: 4px;
+    color: $brown;
+    transition: all 0.4s;
+  }
+  .planet {
+    position: absolute;
+    top: -15%;
+    right: 0%;
+    width: 23%;
+    transform: translateX(99%);
+  }
+  @media (min-width: 1024px) {
+    padding-top: 30px;
+    .my-container {
+    }
+    .heading {
+    }
+    .subheading {
+      padding-bottom: 40px;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    padding-bottom: 100px;
+  }
+}

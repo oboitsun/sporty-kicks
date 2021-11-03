@@ -1,0 +1,24 @@
+@import "./variables.scss";
+.splash-kicks {
+  padding-bottom: 40px;
+  @apply flex justify-center items-center overflow-hidden max-w-sm lg:max-w-md xl:max-w-lg;
+  .kick-main {
+    width: 85%;
+    z-index: 10;
+  }
+  .kick-minor {
+    position: relative;
+    width: 45%;
+    top: 40px;
+    left: 40%;
+  }
+  .kick-minor.r {
+    left: unset;
+    right: 40%;
+  }
+  @media (min-width: 1024px) {
+  }
+
+  @media (min-width: 1280px) {
+  }
+}
